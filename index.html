@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERSONA FINDER x RPG LINKTREE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+  <div class="pixel-dashboard">
+    
+    <div class="finder-panel pixel-card">
+      <div class="panel-header">
+        <i class="fas fa-scroll"></i>
+        <h2>DIGITAL PERSONA</h2>
+        <i class="fas fa-dice-d20"></i>
+      </div>
+      
+      <form id="personaForm">
+        <div class="input-group">
+          <label for="nama"><i class="fas fa-user-ninja"></i> NAMA PETUALANG</label>
+          <input type="text" id="nama" placeholder="cth. Gusti" class="pixel-input" required>
+        </div>
+
+        <div class="input-group">
+          <label for="hobi"><i class="fas fa-hat-wizard"></i> HOBI UTAMA</label>
+          <select id="hobi" class="pixel-select" required>
+            <option value="" disabled selected>— Pilih Hobi —</option>
+            <option value="coding">💻 [CODING]</option>
+            <option value="design">🎨 [DESIGN]</option>
+            <option value="music">🎵 [MUSIK]</option>
+            <option value="writing">✍️ [MENULIS]</option>
+            <option value="gaming">🎮 [GAMING]</option>
+            <option value="sports">⚽ [OLAHRAGA]</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="angka"><i class="fas fa-dice"></i> ANGKA KEBERUNTUNGAN (1-10)</label>
+          <input type="number" id="angka" min="1" max="10" placeholder="7" class="pixel-input" required>
+          <div class="pixel-hint">[ Pilih 1 - 10 ]</div>
+        </div>
+
+        <button type="submit" class="pixel-btn">
+          <i class="fas fa-crown"></i> SCAN PERSONA <i class="fas fa-crown"></i>
+        </button>
+      </form>
+
+      <div class="persona-card" id="personaOutput">
+        <div class="persona-header">
+          <span class="pixel-badge"> HASIL SCAN </span>
+        </div>
+        <div class="persona-main">
+          <span class="persona-title" id="personaResult">—</span>
+        </div>
+        <div class="persona-desc" id="personaSubtext">Isi form untuk melihat persona</div>
+        <div class="pixel-divider"></div>
+        <div class="pixel-footer-note">
+          <i class="fas fa-code-branch"></i> KOMBINASI UNIK = PERSONA BERBEDA
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-panel pixel-card">
+      <div class="avatar-frame">
+        <img class="pixel-avatar" src="pp.jpg" alt="Pixel Avatar">
+        <div class="pixel-overlay"></div>
+      </div>
+      <div class="profile-name">GUSTI REVALION PUTRADA</div>
+      <div class="profile-class">[ AI Integration Engineer  ]</div>
+      <div class="profile-bio">✦ AI Enthusiast ✦</div>
+      
+      <div class="linktree-buttons">
+        <a href="https://github.com/Lion2876" class="link-btn pixel-link" target="_blank">
+          <i class="fab fa-github"></i> GITHUB · Lion2867
+        </a>
+        <a href="https://www.instagram.com/gusti_l67?igsh=MXJvOHF3aTU3eXRheQ==" class="link-btn pixel-link" target="_blank">
+          <i class="fab fa-instagram"></i> INSTAGRAM · gusti_l67
+        </a>
+        <a href="https://x.com/GustiRevaLion" class="link-btn pixel-link" target="_blank">
+          <i class="fab fa-x-twitter"></i> X · @GustiRevaLion
+        </a>
+        <a href="https://www.facebook.com/share/1BG17R7Fjn/" class="link-btn pixel-link" target="_blank">
+          <i class="fab fa-facebook"></i> FACEBOOK · Gustirevalion
+        </a>
+        <a href="#" class="link-btn pixel-link" target="_blank">
+          <i class="fas fa-briefcase"></i> PORTFOLIO
+        </a>
+      </div>
+      
+        <div class="rpg-status-bars">
+        <div class="status-row">
+          <span class="status-label">❤️ HP</span>
+          <div class="status-bar-container">
+            <div class="status-bar-fill hp-fill" style="width: 76%;"></div>
+          </div>
+          <span class="status-value">76/100</span>
+        </div>
+        <div class="status-row">
+          <span class="status-label">💙 MP</span>
+          <div class="status-bar-container">
+            <div class="status-bar-fill mp-fill" style="width: 82%;"></div>
+          </div>
+          <span class="status-value">82/100</span>
+        </div>
+        <div class="status-row">
+          <span class="status-label">⚡ EXP</span>
+          <div class="status-bar-container">
+            <div class="status-bar-fill exp-fill" style="width: 36%;"></div>
+          </div>
+          <span class="status-value">Lv. 7</span>
+        </div>
+      </div>
+      
+      <div class="anime-companion">
+        <div class="companion-header">
+          <i class="fas fa-star"></i> PARTY MEMBER <i class="fas fa-star"></i>
+        </div>
+        <div class="companion-frame">
+          <img src="ppp.jpg" alt="Anime Character" class="pixel-companion">
+          <div class="companion-overlay"></div>
+        </div>
+        <div class="companion-name">RAIDEN EI · LV.67</div>
+        <div class="companion-class"> ⚡︎ Electro Fighter ⚡︎ </div>
+      </div>
+      
+      <div class="pixel-status">
+        <span class="status-bar"></span>
+        <span> LINKTREE · G1A024081 · @gustirevalion </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="pixel-corner tl"></div>
+  <div class="pixel-corner tr"></div>
+  <div class="pixel-corner bl"></div>
+  <div class="pixel-corner br"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
